@@ -4,7 +4,11 @@ import { useState, useEffect } from 'react';
 const Options = ({ data, questionState, setQuestionState }) => {
     const { id, name, img, selected } = questionState
 
+    const selectedButtonStyle={
+        backgroundColor: "initial",
+    backgroundImage: "linear-gradient(-180deg, #00D775, #00BD68)",
 
+    }
     const [optionsArrayState, setOptionsArrayState] = useState(['A', 'B', 'C', 'D'])
 
     const [buttonStyleState, setButtonStyleState] = useState({
@@ -25,7 +29,7 @@ const Options = ({ data, questionState, setQuestionState }) => {
                     // console.log(questionState.id, data[(questionState.id) -1].selected, value)
                     if (value === data[(questionState.id) -1].selected.value)
 
-                        return <button key={value} onClick={() => saveOption({ value })} style={{ backgroundColor: 'green' }} >{value}</button>
+                        return <button key={value} onClick={() => saveOption({ value })} style={selectedButtonStyle} >{value}</button>
                     else
                         return (<button key={value} onClick={() => saveOption({ value })} style={{ buttonStyleState }}  >{value}</button>)
                 })}

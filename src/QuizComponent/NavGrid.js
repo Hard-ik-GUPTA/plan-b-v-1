@@ -14,7 +14,6 @@ const NavGrid = ({ data, questionState, setQuestionState }) => {
                 {data.map((value) => {
 
                     if (value.selected !== '') {
-                        console.log(value.id);
                         if (questionState.id === value.id)
 
                             return (

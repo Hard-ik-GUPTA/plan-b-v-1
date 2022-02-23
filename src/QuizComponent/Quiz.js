@@ -19,27 +19,15 @@ const Quiz = () => {
     const [questionState, setQuestionState] = useState(data[0])
     const [submitState, setSubmitState] = useState(false)
     const [submitConfirmState, setSubmitConfirmState] = useState(true)
-    console.log(questionState);
 
-    const [questions, setQuestions] = useState([])
-    const usersCollectionRef = collection(db, "questions")
-    useEffect(() => {
-        const getQuestions = async () => {
-            const data = await getDocs(usersCollectionRef);
+    const marks=0;
 
-            setQuestions(data.docs.map((doc) => ({ ...doc.data() })))
-            console.log(data, "///////////////")
 
-        };
-        getQuestions();
-
-    }, [])
 
 
 
     return (
         <>
-            {console.log(questions)}
 
             {
                 submitConfirmState ?
@@ -59,7 +47,7 @@ const Quiz = () => {
                         </div>
 
                     </> :
-                    <Result data={data} />
+                    <Result data={data} marks={marks} />
             }
 
 

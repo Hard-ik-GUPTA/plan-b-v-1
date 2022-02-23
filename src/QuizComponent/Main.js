@@ -11,12 +11,10 @@ const Main = ({ data, questionState, setQuestionState }) => {
         return value.img
     })
 
-    console.log(imgArray)
 
 
     const checkBoundary = (param) => {
         if (param <= 0) {
-            console.log(data.length)
             return data.length
         }
         else if (param > data.length)

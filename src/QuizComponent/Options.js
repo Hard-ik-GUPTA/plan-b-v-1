@@ -17,7 +17,6 @@ const Options = ({ data, questionState, setQuestionState }) => {
 
     const saveOption = (param) => {
         data[(questionState.id) - 1].selected = param
-        console.log(data)
 
         setOptionsArrayState(['A', 'B', 'C', 'D'])
     }

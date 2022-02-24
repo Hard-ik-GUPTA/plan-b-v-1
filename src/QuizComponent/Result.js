@@ -1,51 +1,23 @@
-import {React,useState,useContext} from 'react'
-import { setUserContext, UserContext } from '../App'
+import { React, useState, useContext } from 'react'
+import { UserContext } from '../App'
+import Reviewquiz from './ReviewQuiz/Reviewquiz'
+
+
+import Quiz from './Quiz'
+
+const Result = () => {
+    const { userDetails, setUserDetails } = useContext(UserContext)
 
 
 
-const Result = ({ data }) => {
-
-    const userDetails=useContext(UserContext)
-    const setUserDetails=useContext(setUserContext)
-    let marks=0;
     return (
-        <p>hello</p>
-        // <>
-        //     {
-        //         data.map((value) => {
-        //             const { id, name, img, selected, answer } = value
+        <div>
+            <p>Result</p>
 
-        //             console.log(selected)
-        //             if (selected.value === answer){
-        //                 marks+=4;
+            {(userDetails.marks)}
 
-        //                 return (
-
-        //                     <p>Correct {name}</p>   
-
-        //                 )
-        //         }
-        //             else if(selected.value!==''&& selected.value!==answer){
-                        
-
-        //                 return (
-        //                     <p>  {console.log(selected.value)}  Incorrect ++{name}</p>
-                            
-        //                 )
-        //             }
-        //             else if(selected.value===undefined){
-        //                 return <p>not attempted</p>
-                        
-        //             }
-        //         })
-        //     }
-        //     {marks}
-        //         {/* {setUserDetails({...userDetails,marks})} */}
-
-        //         {setUserDetails({...userDetails,marks})}
-        //     {console.log(userDetails)}
-        // </>
+        </div>
     )
 }
 
-export default Result 
+export default Result

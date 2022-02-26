@@ -13,7 +13,7 @@ const NavGrid = ({ data, questionState, setQuestionState }) => {
             <div className='navGridContainer'>
                 {data.map((value) => {
 
-                    if (value.selected !== '') {
+                    if (value.selected !== 'x') {
                         if (questionState.id === value.id)
 
                             return (

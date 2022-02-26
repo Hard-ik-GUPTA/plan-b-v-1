@@ -1,6 +1,6 @@
 import { React, useState, useContext } from 'react'
 import { UserContext } from '../App'
-import Reviewquiz from './ReviewQuiz/Reviewquiz'
+import Reviewquiz from '../ReviewQuiz/Reviewquiz'
 import data from './data'
 
 
@@ -19,7 +19,8 @@ const Result = () => {
             {(userDetails.marks)}
             </div>
 
-            {(data[0].selected.value)}
+            <Reviewquiz/>
+
 
 
         </div>

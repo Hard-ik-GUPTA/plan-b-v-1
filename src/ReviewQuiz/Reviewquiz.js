@@ -1,9 +1,14 @@
 import React from 'react'
-
-const Reviewquiz = ({questionState}) => {
+import data from '../QuizComponent/data'
+import QuizTemplate from './QuizTemplate'
+const Reviewquiz = () => {
   return (
     <>
-        {questionState.id}
+      hello
+      {data[0].answer}
+
+      <QuizTemplate/>
+
     </>
   )
 }

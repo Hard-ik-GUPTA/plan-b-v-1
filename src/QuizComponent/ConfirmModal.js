@@ -18,9 +18,10 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState }) => {
 
   const calculateMarks = () => {
     const correct = data.filter(x => x.selected.value === x.answer)
-    let marks = correct.length
+    const incorrect = data.filter (x=> (x.selected.value !== x.answer  && x.selected !== 'x'))
+    let marks = correct.length*4-incorrect.length
     setUserDetails({...userDetails,marks})
-    console.log(marks);
+    console.log(correct.length,incorrect.length,marks);
 
   }
 

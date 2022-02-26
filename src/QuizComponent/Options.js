@@ -23,7 +23,7 @@ const Options = ({ data, questionState, setQuestionState }) => {
 
     return (
         <>
-            <div>
+            <div className='optionContainerGrid'>
                 {optionsArrayState.map((value) => {
                     // console.log(questionState.id, data[(questionState.id) -1].selected, value)
                     if (value === data[(questionState.id) -1].selected.value)

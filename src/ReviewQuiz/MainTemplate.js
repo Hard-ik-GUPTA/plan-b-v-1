@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
-import Options from './Options';
-import mainlogo from './planB-logo.png';
+import OptionsTemplate from './OptionsTemplate';
+import mainlogo from '../QuizComponent/planB-logo.png';
 
 
-const Main = ({ data, questionState, setQuestionState }) => {
+const MainTemplate = ({ data, questionState, setQuestionState }) => {
 
 
     const imgArray = data.map((value) => {
@@ -41,7 +41,7 @@ const Main = ({ data, questionState, setQuestionState }) => {
                 <div ><FiArrowLeft className='arrows' onClick={() => changeQuestionState(-1)} /></div>
 
                 <div className="questionImgContainer">
-                    <img className="questionImg" src={questionState.img} />
+                    <img className="questionImg"src={questionState.img} />
                 </div>
 
                 <div ><FiArrowRight className='arrows' onClick={() => changeQuestionState(1)} /></div>
@@ -49,7 +49,7 @@ const Main = ({ data, questionState, setQuestionState }) => {
 
             </section>
             <div className="answerContainer">
-                <Options data={data} questionState={questionState} setQuestionState={setQuestionState} />
+                <OptionsTemplate data={data} questionState={questionState} setQuestionState={setQuestionState} />
             </div>
 
             <div className='hidden'>
@@ -62,4 +62,4 @@ const Main = ({ data, questionState, setQuestionState }) => {
     );
 };
 
-export default Main;
+export default MainTemplate;

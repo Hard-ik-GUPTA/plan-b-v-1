@@ -34,7 +34,8 @@ const Quiz = () => {
                     <>
                         <div className="quiz-container">
                             <section className='navGridSection'>
-                                <p className='text-heading navGridHeader'>Question Pallete</p>
+                                <p className='text-heading navGridHeader full-text'>Question Pallete</p>
+                                <p className='text-heading navGridHeader short-text'>Ques. Nav</p>
                                 <NavGrid data={data} questionState={questionState} setQuestionState={setQuestionState} />
                                 <div className='submitTest'>
                                     <button onClick={() => setSubmitState(true)}>submit</button>

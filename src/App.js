@@ -28,7 +28,7 @@ function App() {
         {!formSubmitState &&
           <Form setFormSubmitState={setFormSubmitState} userDetails={userDetails} setUserDetails={setUserDetails} />
         }
-          {formSubmitState && <Quiz />}
+          {formSubmitState && <Quiz userDetails={userDetails}/>}
       </UserContext.Provider>
 
     </>

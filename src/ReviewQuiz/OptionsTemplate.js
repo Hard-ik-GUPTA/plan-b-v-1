@@ -23,7 +23,7 @@ backgroundImage: "linear-gradient(0deg, rgba(187,0,0,1) 36%, rgba(255,146,124,1)
 
     return (
         <>
-            <div>
+            <div className='optionContainerGrid'>
                 {optionsArrayState.map((value) => {
                     console.log(questionState.id, data[(questionState.id) -1].selected, value)
                     if (value === data[(questionState.id) - 1].answer)

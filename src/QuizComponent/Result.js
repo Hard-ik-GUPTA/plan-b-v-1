@@ -18,7 +18,8 @@ const Result = () => {
 
             {(userDetails.marks)}
             </div>
-
+            
+            <button>Review Test</button>
             <Reviewquiz/>
 
 

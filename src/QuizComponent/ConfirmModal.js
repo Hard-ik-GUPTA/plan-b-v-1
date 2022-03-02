@@ -61,7 +61,6 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState }) => {
 
   return (
     <>
-      {console.log(userDetails.name)}
 
       <div className='modal-overlay'>
         <div className='confirmModal'>

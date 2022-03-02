@@ -1,0 +1,36 @@
+    const showResult = () => {
+        setSubmitState(false)
+        setSubmitConfirmState(false)
+      }
+
+    const submitForm=async() => {
+
+        const calculateMarks = () => {
+            const correct = data.filter(x => x.selected.value === x.answer)
+            const incorrect = data.filter (x=> (x.selected.value !== x.answer  && x.selected !== 'x'))
+            let marks = correct.length*4-incorrect.length
+            console.log(correct.length,incorrect.length,marks);
+            console.log(userDetails);
+            
+            setUserDetails({...userDetails,marks})
+          }
+        console.log("written to firebase")
+
+        const response = await fetch("https://mathsquiz-848ba-default-rtdb.asia-southeast1.firebasedatabase.app/mathstestresponse.json",
+          {
+            method: "Post",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              userDetails
+            })
+          })
+  
+          showResult()
+      
+      }
+      
+      if(timer===0)
+      submitForm()
+

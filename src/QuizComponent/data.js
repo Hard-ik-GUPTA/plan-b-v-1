@@ -90,69 +90,69 @@ const data = [
 
 
     },
-    // {
-    //     id: '11',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    {
+        id: '11',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '12',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '12',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '13',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '13',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '14',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '14',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '15',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '15',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '16',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '16',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
-    // {
-    //     id: '17',
-    //     name: 'question7',
-    //     img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
-    //     selected:'x',
-    //     answer: "D"
+    },
+    {
+        id: '17',
+        name: 'question7',
+        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/7.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        selected:'x',
+        answer: "D"
 
 
-    // },
+    },
     
 
 ];

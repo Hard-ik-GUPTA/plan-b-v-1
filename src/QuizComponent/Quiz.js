@@ -21,9 +21,10 @@ const Quiz = () => {
     const [submitState, setSubmitState] = useState(false)
     const [submitConfirmState, setSubmitConfirmState] = useState(true)
 
-    const [timer, setTimer] = useState(10)
+    const [timer, setTimer] = useState(120)
     const { userDetails, setUserDetails } = useContext(UserContext)
     const [timeEndState,setTimeEndState]=useState(false)
+    const [ testSubmitState,setTestSubmitState]=useState(false)
 
 
     useEffect(() => {
@@ -90,19 +91,17 @@ const Quiz = () => {
             {
                 submitConfirmState ?
                     <>
-                        <div className="quiz-container">
+                        <div className="quiz-container container">
                             <section className='navGridSection'>
                                 <p className='text-heading navGridHeader full-text'>Question Pallete</p>
                                 <p className='text-heading navGridHeader short-text'>Ques. Nav</p>
                                 <NavGrid data={data} questionState={questionState} setQuestionState={setQuestionState} />
 
 
-                                <div className='submitTest'>
-                                    <button onClick={() => setSubmitState(true)}>submit</button>
-                                </div>
                             </section>
                             <section className='questionContainer'>
                                 <Main data={data} questionState={questionState} setQuestionState={setQuestionState} />
+
 
                             </section>
 
@@ -110,16 +109,20 @@ const Quiz = () => {
                                 Math.floor(timer / 60) + "mins" + timer % 60 + "secs"
                             }
                         </div>
-
+                        <div className='submitTest'>
+                                    <button className="submitTestBtn"onClick={() => setSubmitState(true)}>Submit Test</button>
+                                </div>
                     </> :
-                    <Result data={data} />
+                    <Result />
             }
 
 
-            {submitState ? <ConfirmModal setSubmitState={setSubmitState} setSubmitConfirmState={setSubmitConfirmState} data={data} /> : null}
+            {submitState ? <ConfirmModal setSubmitState={setSubmitState} setSubmitConfirmState={setSubmitConfirmState}  setTestSubmitState={setTestSubmitState} data={data} /> : null}
 
-            {timeEndState? <TimeEndModal submitForm={submitForm} setTimeEndState={setTimeEndState}/> :null}
+            {submitConfirmState && timeEndState? <TimeEndModal submitForm={submitForm} setTimeEndState={setTimeEndState}/> :null}
+            {console.log(submitConfirmState,timeEndState)}
         </>
+
     )
 }
 

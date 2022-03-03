@@ -5,7 +5,7 @@ import data from './data';
 import { UserContext } from '../App'
 
 
-const ConfirmModal = ({ setSubmitState, setSubmitConfirmState }) => {
+const ConfirmModal = ({ setSubmitState, setSubmitConfirmState, setTestSubmitState }) => {
 
   const { userDetails, setUserDetails } = useContext(UserContext)
 
@@ -29,6 +29,7 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState }) => {
   const showResult = () => {
     setSubmitState(false)
     setSubmitConfirmState(false)
+    setTestSubmitState(true)
   }
 
 

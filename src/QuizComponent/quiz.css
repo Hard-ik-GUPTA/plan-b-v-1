@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 
+
+
 .text-heading{
     padding :8px;
     font-size: 25px;
 }
-.quiz-container{
+.marksText{
+    font-size:25px  ;
+    place-items: center;
+}
+
+.container{
     margin: 18px;
     border: 1px solid black;
     display: grid;
@@ -16,7 +23,55 @@
     box-shadow: -7px -6px 10px 1px #d2d0ec, 5px 5px 10px 1px rgb(117, 116, 131);
     border-radius: 17px;
 }
+.detailsInputForm{
+    margin: 18px;
+    border: 1px solid black;
+    box-shadow: -7px -6px 10px 1px #d2d0ec, 5px 5px 10px 1px rgb(117, 116, 131);
+    border-radius: 17px;
+    padding-bottom: 25px;
+}
+.inputFormHeader{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px ;
+    background: linear-gradient(278deg, rgba(5,25,58,1) 0%, rgba(13,59,134,1) 49%);
+    border-radius: 15px 15px 0px 0px;
 
+}
+.inputFormHeader h3{
+    padding: 12px 5px;
+    color: white;
+}
+.inputContainer{
+    margin: 12px;
+}
+.instructions> h2{
+    text-decoration: underline;
+}
+.instructions ul{
+    margin-left: 15px;
+}
+.inputFormContainer h4{
+    margin: 5px 0px 0px 5px
+}
+
+
+.startTestBtn{
+    font-size:16px;
+    font-family:Arial;
+    height:40px;
+    border-width:1px;
+    color:#000;
+    border-color:#599bb3;
+    font-weight:bold;
+    border-radius:8px;
+    box-shadow: 0px 10px 14px -7px #082657;
+    background:linear-gradient(#f9faf7, #d0d2d3);
+    padding: 0px 25px;
+    margin: 10% 0% 0% 40%;
+
+    }
 
 .questionContainer{
     border-left: 1px solid #000;
@@ -103,7 +158,6 @@
     place-items: center;
 }
 .submitTest button{
-    width: 70%;
     font-size:16px;
     font-family:Arial;
     height:50px;
@@ -114,6 +168,7 @@
     border-radius:8px;
     box-shadow: 0px 10px 14px -7px #082657;
     background:linear-gradient(#f9faf7, #d0d2d3);
+    padding: 0px 25px;
 }
 .submitTest button:hover {
     background: linear-gradient(#d0d2d3, #f7f9fa);
@@ -163,15 +218,67 @@
       }
 
 .confirmModal{
-    padding: 50px;
-    background-color: blueviolet;
+    padding: 10%;
     width: 40%;
+    background-color: white;
     position: absolute; 
+    margin: 18px;
+    border: 1px solid black;
+    display: grid;
+    box-shadow: -3px -5px 68px 11px #343434, 3px 5px 10px 1px rgb(76 75 82);
+    border-radius: 12px;
+    padding: 15px;
+}
 
-}
+
+
+
 .confirmModalBtn{
-    width: 125px;
+    width: 49%;
+    font-size: 15px;
+    font-family: Arial;
+    width: 10vw;
+    height: 50px;
+    border-width: 1px;
+    color: #000;
+    border-color: #599bb3;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px #082657;
+    background: linear-gradient(#f7f9fa, #d0d2d3);
+    margin: 0.8%;
+    padding: 5px;
+    margin-top: 40px;
 }
+
+.reviewTestBtn{
+    font-size: 15px;
+    font-family: Arial;
+    width: 10vw;
+    height: 35px;
+    border-width: 1px;
+    color: #000;
+    border-color: #599bb3;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px #082657;
+    background: linear-gradient(#f7f9fa, #d0d2d3);
+    margin: 0.8%;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+.result-container{
+    margin-top: 18px !important;
+    margin: 0px auto;
+    border: 1px solid black;
+    box-shadow: -7px -6px 10px 1px #d2d0ec, 5px 5px 10px 1px rgb(117, 116, 131);
+    border-radius: 12px;
+    padding: 15px;
+    width: 40%;
+}
+
+
 
 .hidden{
     display: none;
@@ -184,6 +291,11 @@
 @media only screen and (max-width: 650px){
     .full-text{display: none;}
     .short-text{display: inline;}
+
+    .startTestBtn{
+        margin: 10% 0% 0% 30%;
+
+    }
     
     .quiz-container{
         display: grid;
@@ -221,8 +333,9 @@
         padding-top: 10px;
     }
     .questionImg{
-        width: 74vw;
-        height: 85vw;
+        width: 75vw;
+    height: 85vw;
+    object-fit: cover;
     }
     .arrows{
         width: 7vw;
@@ -248,5 +361,36 @@
         grid-template-columns: 1fr 1fr;
         gap:10px;
     }
+    .confirmModal{
+        width: 80%;
+    }
+    .confirmModalBtn{
+    width: 60%;
+}
+
+.submitTest >button{
+    transform: translate(-2vw,0vw);
+    padding: 10px;
+    width: 70%;
+
+}
+
+
+
+/* mobile result container */
+.result-container{
+    margin: 18px;
+    border: 1px solid black;
+    display: grid;
+    box-shadow: -7px -6px 10px 1px #d2d0ec, 5px 5px 10px 1px rgb(117, 116, 131);
+    border-radius: 12px;
+    padding: 15px;
+    width: 90%;
+}
+.reviewTestBtn{
+    width:40vw
+}
+
+
 
 }

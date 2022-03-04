@@ -47,18 +47,17 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
                     <div className='instructions'>
                         <h2>Instructions</h2>
                         <ul>
-                            <li>This test is of 1Hr 30Mins, it will be submitted automatically after time expires</li>
-                            <li>This test contains {data.length} Questions </li>
-                            <li>Maximum marks for this test is {data.length}*4 = {data.length * 4} </li>
-                            <li>-1 for wrong answer</li>
-                            <li>You can Navigate through the questions using arrows or the navigation list</li>
-                            <li style={{color:"red"}}>Do not refresh the page during test</li>
+                            <li>This test is of 1Hr 30Mins, it will be submitted automatically after time expires. </li>
+                            <li>This test contains {data.length} questions and Maximum marks for this test is <br></br>{data.length}*4 = {data.length * 4}. </li>
+                            <li>-1 for <span style={{textDecoration:"underline"}}>incorrect answer.</span></li>
+                            <li>You can navigate through the questions using arrows or the navigation list.</li>
+                            <li style={{color:"red"}}>Do not refresh the page during test.</li>
                         </ul>
                     </div>
 
                     <form className="inputFormContainer" onSubmit={saveUserData}>
                         <div className="formGridContainer">
-                            <h3> Name </h3>
+                            <h4 className='formGridItem'> Name </h4>
                             <h3>
                                 <input type="text" name="name" value={userDetails.name} onChange={getUserData} placeholder="Name"></input>
                                 {
@@ -68,7 +67,7 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
 
                                 }
                             </h3>
-                            <h3> Phone No. </h3>
+                            <h4 className='formGridItem'>  Phone No. </h4>
                             <h3>
                                 <input type="text" name="phoneNo" value={userDetails.phoneNo} onChange={getUserData} placeholder="Phone Number"></input>
                                 {

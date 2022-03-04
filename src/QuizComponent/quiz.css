@@ -34,6 +34,10 @@ input{
     border-radius: 17px;
     padding-bottom: 25px;
 }
+.formGridItem{
+    display: grid;
+    align-items: center;
+}
 .inputFormHeader{
     
     height: 50px;
@@ -45,7 +49,7 @@ input{
 
 }
 .inputFormHeader h2{
-    padding: 12px 5px;
+    padding: 12px 1vw;
     color: white;
 }
 .inputContainer{
@@ -96,7 +100,7 @@ input{
     box-shadow: 0px 10px 14px -7px #082657;
     background:linear-gradient(#f9faf7, #d0d2d3);
     padding: 0px 25px;
-    margin: 10% 0% 0% 40%;
+    margin: 4% 0% 0% 40%;
 
     }
 

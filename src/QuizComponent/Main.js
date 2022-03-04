@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import Options from './Options';
 import mainlogo from './planB-logo.png';
+import TimerComponent from './TimerComponent';
 
 
 const Main = ({ data, questionState, setQuestionState }) => {
@@ -41,6 +42,8 @@ const Main = ({ data, questionState, setQuestionState }) => {
                 <div ><FiArrowLeft className='arrows' onClick={() => changeQuestionState(-1)} /></div>
 
                 <div className="questionImgContainer">
+                <TimerComponent />
+
                     <img className="questionImg" src={questionState.img} />
                 </div>
 

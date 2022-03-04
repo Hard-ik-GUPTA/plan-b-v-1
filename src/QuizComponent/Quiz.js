@@ -21,7 +21,7 @@ const Quiz = () => {
     const [submitState, setSubmitState] = useState(false)
     const [submitConfirmState, setSubmitConfirmState] = useState(true)
 
-    const [timer, setTimer] = useState(120)
+    const [timer, setTimer] = useState(1200)
     const { userDetails, setUserDetails } = useContext(UserContext)
     const [timeEndState,setTimeEndState]=useState(false)
     const [ testSubmitState,setTestSubmitState]=useState(false)
@@ -101,13 +101,8 @@ const Quiz = () => {
                             </section>
                             <section className='questionContainer'>
                                 <Main data={data} questionState={questionState} setQuestionState={setQuestionState} />
-
-
                             </section>
 
-                            {
-                                Math.floor(timer / 60) + "mins" + timer % 60 + "secs"
-                            }
                         </div>
                         <div className='submitTest'>
                                     <button className="submitTestBtn"onClick={() => setSubmitState(true)}>Submit Test</button>

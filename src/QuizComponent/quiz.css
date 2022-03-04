@@ -2,10 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
+input{
+    height: 30px;
+    font-size: 14px;
+}
 .text-heading{
     padding :8px;
     font-size: 25px;
@@ -31,6 +35,7 @@
     padding-bottom: 25px;
 }
 .inputFormHeader{
+    
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -39,7 +44,7 @@
     border-radius: 15px 15px 0px 0px;
 
 }
-.inputFormHeader h3{
+.inputFormHeader h2{
     padding: 12px 5px;
     color: white;
 }
@@ -48,12 +53,34 @@
 }
 .instructions> h2{
     text-decoration: underline;
+    padding-bottom:10px ;
 }
 .instructions ul{
     margin-left: 15px;
+    font-size: 19px;
 }
-.inputFormContainer h4{
-    margin: 5px 0px 0px 5px
+.instructions li{
+    margin-bottom:10px ;
+}
+
+.inputFormContainer {
+    
+    margin:15vh 5vw 0vw
+}
+.formGridContainer{
+    display: grid;
+    grid-template-columns: 10vw 20vw;
+    row-gap: 2.5vh;
+    width: 35%;
+    margin: 0 auto;
+    
+}
+
+    .gridItemAlert{
+    grid-column: 2/2;
+}
+.cumpulsaryField{
+    color: red;
 }
 
 
@@ -79,6 +106,8 @@
 .questionImgContainer{
     display: grid;
     place-items: center;
+    position: relative;
+
 }
 .questionImg{
     width: 35vw;
@@ -98,7 +127,7 @@
 
 .navGridContainer{
     height: 180px;
-    padding: 20px 10%;
+    padding: 10% 9%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 10px;
@@ -111,10 +140,10 @@
     display: grid;
     place-items: center;
     padding: 12px;
-
+    color: white;
     outline: 1px solid black;
     border-radius: 100%;
-    background-color:#63E3ED;
+    background-color:#0350cd;
     box-shadow: 0px 5px 14px -7px #082657;
 
 
@@ -319,6 +348,7 @@
     }
     .navGridItem{
         padding: 10px 10px ;
+
         width: 85%;
 
         
@@ -327,15 +357,19 @@
         font-size: 100%;
         padding:2px;
     }
-
+    .formGridContainer{
+        display: grid;
+        grid-template-columns: 25vw 50vw;
+        row-gap: 2.5vh;
+        width: 100% ;
+    }
     .questionHeader .text-heading{
         font-size: 20px;
         padding-top: 10px;
     }
     .questionImg{
         width: 75vw;
-    height: 85vw;
-    object-fit: cover;
+        height: 90vw;
     }
     .arrows{
         width: 7vw;
@@ -365,7 +399,7 @@
         width: 80%;
     }
     .confirmModalBtn{
-    width: 60%;
+    width: 47%;
 }
 
 .submitTest >button{

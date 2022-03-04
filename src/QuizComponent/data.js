@@ -2,7 +2,7 @@ const data = [
     {
         id: '1',
         name: 'question1',
-        img: 'https://firebasestorage.googleapis.com/v0/b/quiz-90f6e.appspot.com/o/1.png?alt=media&token=e70a8733-59a5-4033-82d4-87d5fe60a492',
+        img: 'https://firebasestorage.googleapis.com/v0/b/mathsquiz-848ba.appspot.com/o/1.png?alt=media&token=f52fd956-a725-485e-822f-746e27c329ec',
         selected:'x',
         answer: "B"
 

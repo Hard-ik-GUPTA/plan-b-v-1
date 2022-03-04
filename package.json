@@ -9,6 +9,7 @@
     "firebase": "^9.6.6",
     "firebaseui": "^6.0.0",
     "react": "^17.0.2",
+    "react-countdown-circle-timer": "^3.0.8",
     "react-dom": "^17.0.2",
     "react-firebase": "^2.2.8",
     "react-icons": "^4.3.1",

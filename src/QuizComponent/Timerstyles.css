@@ -1,0 +1,49 @@
+
+
+h1 {
+    font-family: "Arial";
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .App{
+    position: absolute;
+    top: 0;
+  right: 0;
+  }
+  .timer-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+  }
+  
+  .timer {
+    font-family: "Arial";
+    align-items: center;
+    position: absolute;
+    left: 20%;
+  }
+  .timer-wrapper svg{
+    position: absolute;
+    right: 10vw;
+  }
+  .text {
+    color: #aaa;
+    position: absolute;
+  }
+  
+  .value {
+    font-size: 19px;
+    transform: translateX(-8vw);
+  }
+  
+
+  
+  @media only screen and (max-width: 650px){
+    .value {
+        font-size: 20px;
+      }
+      .timer-wrapper svg{
+        position: absolute;
+        right: 14vw;
+      }
+}

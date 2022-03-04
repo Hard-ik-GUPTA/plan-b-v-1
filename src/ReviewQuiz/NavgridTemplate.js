@@ -70,7 +70,7 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
                                 <div className='navGridItem ' key={value.id}
                                     style={{
                                         outline: "2px solid black",
-                                        backgroundColor: "white"
+                                       backgroundColor:"#0350cd"
 
                                     }}
                                     onClick={() => changeQuestionState(value)}>
@@ -82,7 +82,7 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
                             return (
                                 <div className='navGridItem ' key={value.id}
                                     style={{
-                                        backgroundColor: "white"
+                                       backgroundColor: "#0350cd"
                                     }}
                                     onClick={() => changeQuestionState(value)}>
                                     <p className='navItemText'>{value.id} </p>

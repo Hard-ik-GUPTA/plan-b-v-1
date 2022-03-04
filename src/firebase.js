@@ -4,13 +4,13 @@ import { initializeApp } from 'firebase/app';
 import {getFirestore} from "@firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDxvcnqTni6kkM2SNQEsXyVI3zon_tALqs",
-    authDomain: "plan-b-416e4.firebaseapp.com",
-    projectId: "plan-b-416e4",
-    storageBucket: "plan-b-416e4.appspot.com",
-    messagingSenderId: "723325654397",
-    appId: "1:723325654397:web:303f332c4675982deea814",
-    measurementId: "G-LSXNN46NH3"
+  apiKey: "AIzaSyCGzWsRSDFUEWDEC8qsZcGFQ1kx3TPGM4k",
+  authDomain: "plan-b-webapp.firebaseapp.com",
+  projectId: "plan-b-webapp",
+  storageBucket: "plan-b-webapp.appspot.com",
+  messagingSenderId: "787884073322",
+  appId: "1:787884073322:web:48b8f465ef1b5ac2234513",
+  measurementId: "G-5GMJHSQGH6"
   
   };
 

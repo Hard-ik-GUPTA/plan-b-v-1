@@ -38,7 +38,7 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState, setTestSubmitStat
 
 
       console.log("written to firebase")
-      const response = await fetch("https://mathsquiz-848ba-default-rtdb.asia-southeast1.firebasedatabase.app/mathstestresponse.json",
+      const response = await fetch("https://plan-b-webapp-default-rtdb.asia-southeast1.firebasedatabase.app/planBtestResponse.json",
         {
           method: "Post",
           headers: {

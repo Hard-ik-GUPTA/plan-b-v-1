@@ -39,7 +39,7 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
         <>
             <div className='detailsInputForm '>
                 <div className='inputFormHeader'>
-                    <h2>Quadratic Test</h2>
+                    <h2>Parabola & Circles Test</h2>
                     <img className="logo-image" src={mainlogo}></img>
                 </div>
 
@@ -52,6 +52,7 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
                             <li>Maximum marks for this paper is {data.length}*4 = {data.length * 4} </li>
                             <li>-1 for wrong answer</li>
                             <li>You can Navigate through the questions using arrows or the navigation list</li>
+                            <li style={{color:"red"}}>Do not refresh the page during test</li>
                         </ul>
                     </div>
 

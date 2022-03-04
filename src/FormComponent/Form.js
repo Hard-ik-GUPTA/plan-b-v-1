@@ -47,9 +47,9 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
                     <div className='instructions'>
                         <h2>Instructions</h2>
                         <ul>
-                            <li>This Paper is of 1Hr 30Mins, it will be submitted automatically after time expires</li>
-                            <li>This paper contains {data.length} Questions </li>
-                            <li>Maximum marks for this paper is {data.length}*4 = {data.length * 4} </li>
+                            <li>This test is of 1Hr 30Mins, it will be submitted automatically after time expires</li>
+                            <li>This test contains {data.length} Questions </li>
+                            <li>Maximum marks for this test is {data.length}*4 = {data.length * 4} </li>
                             <li>-1 for wrong answer</li>
                             <li>You can Navigate through the questions using arrows or the navigation list</li>
                             <li style={{color:"red"}}>Do not refresh the page during test</li>

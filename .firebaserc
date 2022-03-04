@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "mathsquiz-848ba"
-  }
+    "default": "mathsquiz-848ba",
+    "main": "mathsquiz-848ba"
+  },
+  "targets": {}
 }

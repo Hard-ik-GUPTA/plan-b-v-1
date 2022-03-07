@@ -24,7 +24,7 @@ const Quiz = () => {
     const [submitState, setSubmitState] = useState(false)
     const [submitConfirmState, setSubmitConfirmState] = useState(true)
 
-    const [timer, setTimer] = useState(50)
+    const [timer, setTimer] = useState(500)
     const { userDetails, setUserDetails } = useContext(UserContext)
     const [timeEndState,setTimeEndState]=useState(false)
     const [ testSubmitState,setTestSubmitState]=useState(false)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import OptionsTemplate from './OptionsTemplate';
 import mainlogo from '../QuizComponent/planB-logo.png';
+import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from "react-icons/bs";
 
 
 const MainTemplate = ({ data, questionState, setQuestionState }) => {
@@ -38,13 +38,16 @@ const MainTemplate = ({ data, questionState, setQuestionState }) => {
 
             <section className='questionNavContainer'>
 
-                <div ><FiArrowLeft className='arrows' onClick={() => changeQuestionState(-1)} /></div>
 
                 <div className="questionImgContainer">
                     <img className="questionImg"src={questionState.img} />
                 </div>
 
-                <div ><FiArrowRight className='arrows' onClick={() => changeQuestionState(1)} /></div>
+                <div className="navArrowContainer">
+                <BsFillArrowLeftCircleFill className='arrows' onClick={() => changeQuestionState(-1)} />
+                <BsFillArrowRightCircleFill className='arrows' onClick={() => changeQuestionState(1)} />
+                </div>
+                
 
 
             </section>

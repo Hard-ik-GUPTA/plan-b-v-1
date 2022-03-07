@@ -4,11 +4,19 @@ import Form from './FormComponent/Form'
 
 import Quiz from './QuizComponent/Quiz';
 import Home from './Home';
+import data from './QuizComponent/data';
 
 export const UserContext = createContext();
 
 
 function App() {
+
+
+
+
+
+  
+
 
   const [userDetails, setUserDetails] = useState({
     name: "",
@@ -28,7 +36,7 @@ function App() {
         {!formSubmitState &&
           <Form setFormSubmitState={setFormSubmitState} userDetails={userDetails} setUserDetails={setUserDetails} />
         }
-          {formSubmitState && <Quiz userDetails={userDetails}/>}
+          {formSubmitState && <Quiz userDetails={userDetails} data={data}/>}
       </UserContext.Provider>
 
     </>

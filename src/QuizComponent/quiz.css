@@ -114,8 +114,10 @@ input{
 
 }
 .questionImg{
-    width: 35vw;
-    height: 25vw;
+    width: 39vw;
+    z-index: -1;
+    height: 31vw;
+    transform: translate(0px, -40px);
 }
 .navGridSection{
     display: grid; 
@@ -147,7 +149,7 @@ input{
     color: white;
     outline: 1px solid black;
     border-radius: 100%;
-    background-color:#0350cd;
+    background-color:#0d3b86;
     box-shadow: 0px 5px 14px -7px #082657;
 
 
@@ -170,21 +172,21 @@ input{
     width: 70px;
     height: 50px;
 }
-.questionNavContainer{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    
+
+
+.navArrowContainer{
+    display: flex;
+    width: 77vw;
+    justify-content: space-around;
+    transform: translate(-3px, -104px);
 }
 
-
-
 .arrows{
-    margin-top: 170px;
-    width: 5vw;
-    height: 3vw;
+    width: 3vw;
+    height: 9vh;
     display: grid;
     place-items: center;
-    margin-left: 60px;
+    color: #0d3b86;
 }
 .submitTest{
     display: grid;
@@ -214,7 +216,7 @@ input{
 
 .answerContainer{
     margin: 0 auto;
-    width: 60%;
+    width: 57%;
 
 }
 
@@ -336,11 +338,7 @@ input{
         /* height: 90vh; */
         margin: 7px;
     }
-    .questionNavContainer{
-        display: grid;
-        grid-template-columns: 8% 84% 8%;
-        
-    }
+
     .navGridContainer{
         height: 500px;
         padding: 20px 5px;
@@ -372,18 +370,24 @@ input{
         padding-top: 10px;
     }
     .questionImg{
-        width: 75vw;
-        height: 90vw;
+        transform: translate(-13px, -21px);
+        z-index: -1;
+        width: 88vw;
+        height: 105vw;
+    }
+
+    .navArrowContainer{
+        display: flex;
+        width: 80vw;
+        justify-content: space-around;
+        transform: translate(0vw, -10vw);
     }
     .arrows{
-        width: 7vw;
-        height: 5vw;
+        width: 8vw;
+        height: 8vw;
         display: grid;
         place-items: center;
-        position: relative;
         z-index: 2;
-        right: 60px;
-        bottom: 55px;
     }
     .answerContainer{
         margin: 0 auto;

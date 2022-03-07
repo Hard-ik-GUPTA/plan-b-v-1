@@ -21,7 +21,7 @@ function TimerComponent() {
             <div className="timer-wrapper">
                 <CountdownCircleTimer
                     isPlaying
-                    duration={1200}
+                    duration={500}
                     colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
                     colorsTime={[10, 6, 3, 0]}
                     size={30}

@@ -20,7 +20,8 @@ h1 {
     font-family: "Arial";
     align-items: center;
     position: absolute;
-    left: 20%;
+    margin: 0;
+    padding: 0;
   }
   .timer-wrapper svg{
     position: absolute;
@@ -41,6 +42,9 @@ h1 {
   @media only screen and (max-width: 650px){
     .value {
         font-size: 20px;
+      }
+      .timer-wrapper{
+        transform: translate(-10px,0px);
       }
       .timer-wrapper svg{
         position: absolute;

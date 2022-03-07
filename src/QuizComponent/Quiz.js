@@ -17,11 +17,14 @@ import TimeEndModal from './TimeEndModal';
 
 const Quiz = () => {
 
+    
+
+
     const [questionState, setQuestionState] = useState(data[0])
     const [submitState, setSubmitState] = useState(false)
     const [submitConfirmState, setSubmitConfirmState] = useState(true)
 
-    const [timer, setTimer] = useState(1200)
+    const [timer, setTimer] = useState(50)
     const { userDetails, setUserDetails } = useContext(UserContext)
     const [timeEndState,setTimeEndState]=useState(false)
     const [ testSubmitState,setTestSubmitState]=useState(false)
@@ -29,7 +32,13 @@ const Quiz = () => {
 
     useEffect(() => {
       calculateMarks()
+      
     }, [timer])
+
+    
+
+
+
     
 
     setTimeout(() => {

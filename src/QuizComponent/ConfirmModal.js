@@ -65,11 +65,11 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState, setTestSubmitStat
 
       <div className='modal-overlay'>
         <div className='confirmModal'>
-          <h3>Are You sure You want to submit the test</h3>
+          <h3>Are you sure you want to submit the test ?</h3>
 
           <p>
             <button onClick={submitForm} className='confirmModalBtn'>Yes</button>
-            <button onClick={() => setSubmitState(false)} className='confirmModalBtn'>no</button>
+            <button onClick={() => setSubmitState(false)} className='confirmModalBtn'>No</button>
           </p>
         </div>
       </div>

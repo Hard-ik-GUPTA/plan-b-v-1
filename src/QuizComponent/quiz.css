@@ -127,6 +127,7 @@ input{
 }
 
 .navGridHeader{
+    padding: 4px;
     border-bottom: 1px solid black;
 }
 
@@ -357,7 +358,7 @@ input{
     }
     .navGridHeader{
         font-size: 100%;
-        padding:2px;
+        padding:4px;
     }
     .formGridContainer{
         display: grid;

@@ -25,7 +25,7 @@ h1 {
   }
   .timer-wrapper svg{
     position: absolute;
-    right: 10vw;
+    right: 11.5vw;
   }
   .text {
     color: #aaa;
@@ -48,6 +48,6 @@ h1 {
       }
       .timer-wrapper svg{
         position: absolute;
-        right: 14vw;
+        right: 20vw;
       }
 }

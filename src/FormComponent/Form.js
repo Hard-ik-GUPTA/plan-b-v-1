@@ -39,7 +39,7 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
         <>
             <div className='detailsInputForm '>
                 <div className='inputFormHeader'>
-                    <h2>Parabola & Circles Test</h2>
+                    <h2>Ellipse  and Hyperbola Test</h2>
                     <img className="logo-image" src={mainlogo}></img>
                 </div>
 

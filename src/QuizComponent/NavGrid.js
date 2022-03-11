@@ -19,7 +19,7 @@ const NavGrid = ({ data, questionState, setQuestionState }) => {
                             return (
                                 <div className='navGridItem ' key={value.id}
                                     style={{
-                                        outline: "2px solid black",
+                                        outline: "3px solid #50b9cf",
                                         backgroundColor: "initial",
                                         backgroundImage: "linear-gradient(-180deg, rgb(0, 215, 117), rgb(0, 189, 104))"
                                     }}
@@ -44,7 +44,7 @@ const NavGrid = ({ data, questionState, setQuestionState }) => {
                             return (
                                 <div className='navGridItem ' key={value.id}
                                     style={{
-                                        outline: "2px solid black"
+                                        outline: "3px solid #50b9cf"
                                     }}
                                     onClick={() => changeQuestionState(value)}>
                                     <p className='navItemText'>{value.id} </p>

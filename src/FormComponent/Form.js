@@ -39,13 +39,13 @@ const Form = ({ setFormSubmitState, userDetails, setUserDetails }) => {
         <>
             <div className='detailsInputForm '>
                 <div className='inputFormHeader'>
-                    <h2>Ellipse  and Hyperbola Test</h2>
+                    <h2>Ellipse  and Hyperbola </h2>
                     <img className="logo-image" src={mainlogo}></img>
                 </div>
 
                 <div className="inputContainer">
                     <div className='instructions'>
-                        <h2>Instructions</h2>
+                        <h2>Test Instructions</h2>
                         <ul>
                             <li>This test is of 1Hr 30Mins, it will be submitted automatically after time expires. </li>
                             <li>This test contains {data.length} questions and Maximum marks for this test is <br></br>{data.length}*4 = {data.length * 4}. </li>

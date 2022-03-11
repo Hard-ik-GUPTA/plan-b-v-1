@@ -10,7 +10,7 @@ const data = [
     },
     {
         id: '2',
-        img:'https://firebasestorage.googleapis.com/v0/b/mathsquiz-848ba.appspot.com/o/2.png?alt=media&token=89a22eed-0ccf-4024-b720-956bc4f149a8',
+        img:'https://firebasestorage.googleapis.com/v0/b/mathsquiz-848ba.appspot.com/o/2.png?alt=media&token=a4831a87-e218-4e84-9636-b0e92405e91c',
         selected:'x',
         answer: "B"
 

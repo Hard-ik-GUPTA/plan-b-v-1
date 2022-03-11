@@ -28,7 +28,7 @@ input{
     border-radius: 17px;
 }
 .detailsInputForm{
-    margin: 18px;
+    margin: 5px 3px;
     border: 1px solid black;
     box-shadow: -7px -6px 10px 1px #d2d0ec, 5px 5px 10px 1px rgb(117, 116, 131);
     border-radius: 17px;
@@ -337,7 +337,7 @@ input{
         display: grid;
         grid-template-columns: 13% 87%;
         /* height: 90vh; */
-        margin: 7px;
+        margin: 5px 3px;
     }
 
     .navGridContainer{

@@ -22,6 +22,7 @@ h1 {
     position: absolute;
     margin: 0;
     padding: 0;
+    transform: translate(-2vw);
   }
   .timer-wrapper svg{
     display: none;
@@ -34,15 +35,15 @@ h1 {
   }
   
   .value {
-    font-size: 19px;
-    transform: translateX(-8vw);
+    font-size: 18px;
+    transform: translateX(-10vw);
   }
   
 
   
   @media only screen and (max-width: 650px){
     .value {
-        font-size: 20px;
+        font-size: 18px;
       }
       .timer-wrapper{
         transform: translate(-10px,0px);

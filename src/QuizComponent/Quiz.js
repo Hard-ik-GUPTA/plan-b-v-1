@@ -44,7 +44,7 @@ const Quiz = () => {
     setTimeout(() => {
         if (timer > 0) {
             setTimer(timer - 1);
-            console.log(timer);
+            // console.log(timer);
         }
         else
         setTimeEndState(true)
@@ -66,17 +66,17 @@ const Quiz = () => {
         const correct = data.filter(x => x.selected.value === x.answer)
         const incorrect = data.filter(x => (x.selected.value !== x.answer && x.selected !== 'x'))
         let marks = correct.length * 4 - incorrect.length
-        console.log(correct.length, incorrect.length, marks);
+        // console.log(correct.length, incorrect.length, marks);
         
         setUserDetails({ ...userDetails, marks })
-        console.log(userDetails);
+        // console.log(userDetails);
 
     }
 
     const submitForm = async () => {
 
 
-        console.log("written to firebase")
+        // console.log("written to firebase")
 
         const response = await fetch("https://plan-b-webapp-default-rtdb.asia-southeast1.firebasedatabase.app/planBtestResponse.json",
             {
@@ -124,7 +124,7 @@ const Quiz = () => {
             {submitState ? <ConfirmModal setSubmitState={setSubmitState} setSubmitConfirmState={setSubmitConfirmState}  setTestSubmitState={setTestSubmitState} data={data} /> : null}
 
             {submitConfirmState && timeEndState? <TimeEndModal submitForm={submitForm} setTimeEndState={setTimeEndState}/> :null}
-            {console.log(submitConfirmState,timeEndState)}
+            {/* {console.log(submitConfirmState,timeEndState)} */}
         </>
 
     )

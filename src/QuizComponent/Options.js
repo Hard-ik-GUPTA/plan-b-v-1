@@ -17,16 +17,16 @@ const Options = ({ data, questionState, setQuestionState }) => {
 
     const saveOption = (param) => {
 
-        console.log(data[(questionState.id) - 1].selected+param.value)
+        // console.log(data[(questionState.id) - 1].selected+param.value)
 
 
         if (data[(questionState.id) - 1].selected.value === param.value)
-            {data[(questionState.id) - 1].selected= 'x'
-            console.log(data[(questionState.id) - 1].selected)}
+            {data[(questionState.id) - 1].selected= 'x'}
+            // console.log(data[(questionState.id) - 1].selected)
 
             else
         data[(questionState.id) - 1].selected = param
-        console.log(data[(questionState.id) - 1].selected)
+        // console.log(data[(questionState.id) - 1].selected)
 
         setOptionsArrayState(['A', 'B', 'C', 'D'])
     }

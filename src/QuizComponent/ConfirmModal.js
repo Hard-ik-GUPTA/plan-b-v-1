@@ -21,7 +21,7 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState, setTestSubmitStat
     const incorrect = data.filter (x=> (x.selected.value !== x.answer  && x.selected !== 'x'))
     let marks = correct.length*4-incorrect.length
     setUserDetails({...userDetails,marks})
-    console.log(correct.length,incorrect.length,marks);
+    // console.log(correct.length,incorrect.length,marks);
 
   }
 
@@ -37,7 +37,7 @@ const ConfirmModal = ({ setSubmitState, setSubmitConfirmState, setTestSubmitStat
     e.preventDefault();
 
 
-      console.log("written to firebase")
+      // console.log("written to firebase")
       const response = await fetch("https://plan-b-webapp-default-rtdb.asia-southeast1.firebasedatabase.app/planBtestResponse.json",
         {
           method: "Post",

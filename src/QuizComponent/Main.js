@@ -30,7 +30,7 @@ const Main = ({ data, questionState, setQuestionState }) => {
     const changeQuestionState = (param) => {
         const x = (parseInt(questionState.id) + param)
         const y = checkBoundary(x)
-        console.log(y)
+        // console.log(y)
         setQuestionState(data[y - 1])
     }
     return (

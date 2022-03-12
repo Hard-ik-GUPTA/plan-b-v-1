@@ -20,7 +20,7 @@ const Result = () => {
             
             <button onClick={()=>setReviewState(true)}className='reviewTestBtn'>Review Test</button>
             </div>
-            {console.log(reviewState)}
+            {/* console.log(reviewState) */}
             {reviewState?<Reviewquiz/>:null}
             
 

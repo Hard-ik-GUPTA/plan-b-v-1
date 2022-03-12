@@ -11,7 +11,7 @@ const Home = () => {
         marks: ""
     })
 
-    console.log(userDetails);
+    // console.log(userDetails);
 
 
     const [formSubmitState,setFormSubmitState]=useState(false)

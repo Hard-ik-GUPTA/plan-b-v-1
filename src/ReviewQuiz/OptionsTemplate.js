@@ -9,8 +9,8 @@ const OptionsTemplate = ({ data, questionState, setQuestionState }) => {
 
     }
     const wrongOptionStyle = {
-        background: "rgb(187,0,0)",
-backgroundImage: "linear-gradient(0deg, rgba(187,0,0,1) 36%, rgba(255,146,124,1) 100%);"
+        background: "rgb(255,0,0)",
+        backgroundImage: "rgb(255,0,0)"
 
     }
     const [optionsArrayState, setOptionsArrayState] = useState(['A', 'B', 'C', 'D'])
@@ -25,14 +25,14 @@ backgroundImage: "linear-gradient(0deg, rgba(187,0,0,1) 36%, rgba(255,146,124,1)
         <>
             <div className='optionContainerGrid'>
                 {optionsArrayState.map((value) => {
-                    console.log(questionState.id, data[(questionState.id) -1].selected, value)
+                    // console.log(questionState.id, data[(questionState.id) - 1].selected, value)
                     if (value === data[(questionState.id) - 1].answer)
-                            return <button key={value} style={correctOptionStyle} >{value}</button>
-                        
+                        return <button key={value} style={correctOptionStyle} >{value}</button>
+
                     else if (value === data[(questionState.id) - 1].selected.value)
                         return (<button key={value} style={wrongOptionStyle}  >{value}</button>)
 
-                        else
+                    else
                         return (<button key={value}   >{value}</button>)
 
 

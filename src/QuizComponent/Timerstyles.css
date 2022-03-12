@@ -29,7 +29,8 @@ h1 {
     position: absolute;
     right: 11.5vw;
   }
-  .text {
+  .text { 
+  /* hello*/
     color: #aaa;
     position: absolute;
   }

@@ -1,5 +1,5 @@
-import React from 'react';
-import '../QuizComponent/quiz.css'
+import React, { useEffect, useRef } from 'react';
+import '../QuizComponent/quiz.css';
 
 const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
 
@@ -7,7 +7,13 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
         setQuestionState(param)
 
     }
-    
+    useEffect(() => {
+        console.log("scroll");
+        executeScroll()
+    }, [questionState])
+
+        const navGridContainerRef=useRef(null)     
+        const executeScroll = () => navGridContainerRef.current.scrollIntoView({ behavior: 'smooth' })   
 
     return (
         <>
@@ -18,7 +24,7 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
                         if (value.selected.value === value.answer)
                             if (questionState.id === value.id)
                                 return (
-                                    <div className='navGridItem ' key={value.id}
+                                    <div className='navGridItem ' key={value.id} ref={navGridContainerRef}
                                         style={{
                                             outline: "3px solid 50b9cf",
                                             backgroundColor: "initial",
@@ -44,7 +50,7 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
                         else
                             if (questionState.id === value.id)
                                 return (
-                                    <div className='navGridItem ' key={value.id}
+                                    <div className='navGridItem ' key={value.id} ref={navGridContainerRef}
                                         style={{
                                             backgroundColor: "red",
                                             outline: "3px solid #50b9cf"
@@ -68,7 +74,7 @@ const NavGridTemplate = ({ data, questionState, setQuestionState }) => {
                     else
                         if (questionState.id === value.id) {
                             return (
-                                <div className='navGridItem ' key={value.id}
+                                <div className='navGridItem ' key={value.id} ref={navGridContainerRef}
                                     style={{
                                         outline: "3px solid #50b9cf",
                                        backgroundColor:"#0d3b86"

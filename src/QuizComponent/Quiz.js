@@ -9,16 +9,7 @@ import Result from './Result';
 import { UserContext } from '../App'
 import TimeEndModal from './TimeEndModal';
 
-
-
-
-
-
-
 const Quiz = () => {
-
-    
-
 
     const [questionState, setQuestionState] = useState(data[0])
     const [submitState, setSubmitState] = useState(false)
@@ -34,12 +25,7 @@ const Quiz = () => {
       calculateMarks()
       
     }, [timer])
-
-    
-
-
-
-    
+ 
 
     setTimeout(() => {
         if (timer > 0) {

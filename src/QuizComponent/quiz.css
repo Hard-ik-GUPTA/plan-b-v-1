@@ -121,7 +121,7 @@ input{
 }
 .navGridSection{
     display: grid; 
-    grid-template-rows: 50px 2.2fr 70px; 
+    grid-template-rows: 50px ; 
     gap: 0px 0px; 
 
 }
@@ -133,17 +133,18 @@ input{
 
 
 .navGridContainer{
-    height: 180px;
-    padding: 10% 9%;
+    height: 82.5vh;
+    padding: 0% 9%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 10px;
     overflow-y: scroll;
+    gap:5px 5px;
 
 }
 
 
 .navGridItem{
+    margin-top: 11px;
     display: grid;
     place-items: center;
     padding: 12px;
@@ -336,22 +337,20 @@ input{
     .quiz-container{
         display: grid;
         grid-template-columns: 13% 87%;
-        /* height: 90vh; */
+        height: 90vh;
         margin: 5px 3px;
     }
 
     .navGridContainer{
-        height: 500px;
-        padding: 20px 5px;
+        padding: 0px 5px;
         display: grid;
         grid-template-columns: 1fr  ;
-        gap: 10px;
+        gap: 2px;
         width: 100%;
     
     }
     .navGridItem{
         padding: 10px 10px ;
-
         width: 85%;
 
         

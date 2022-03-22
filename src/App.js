@@ -11,13 +11,6 @@ export const UserContext = createContext();
 
 function App() {
 
-
-
-
-
-  
-
-
   const [userDetails, setUserDetails] = useState({
     name: "",
     phoneNo: "",
